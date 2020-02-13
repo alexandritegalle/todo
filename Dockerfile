@@ -7,7 +7,7 @@ RUN npm install
 RUN npm run-script build
 
 # stage: 2 — the production environment
-FROM nginx:alpine
+FROM nginx
 
 COPY --from=react-build /app/build /usr/share/nginx/html
 EXPOSE 80
