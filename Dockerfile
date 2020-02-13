@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-FROM node:carbon
+FROM node:latest
 
 
 # Create app directory
