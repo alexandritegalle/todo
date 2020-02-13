@@ -1,14 +1,20 @@
-#!/bin/bash
-# stage: 1
-FROM node:8 as react-build
-WORKDIR /app
-COPY . ./
+FROM node:carbon
+
+
+# Create app directory
+WORKDIR /usr/src/app
+
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
+
 RUN npm install
-RUN npm run-script build
+# If you are building your code for production
+# RUN npm install --only=production
 
-# stage: 2 — the production environment
-FROM nginx:alpine
+# Bundle app source
+COPY . .
 
-COPY --from=react-build /app/build /usr/share/nginx/html
 EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+CMD [ "npm", "start" ]
