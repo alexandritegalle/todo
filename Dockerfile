@@ -1,3 +1,4 @@
+#!/bin/bash
 # stage: 1
 FROM node:8 as react-build
 WORKDIR /app
