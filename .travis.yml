@@ -3,7 +3,7 @@ language: bash
 env:
   global:
   - LIVE_SERVICE=todo-service
-  - LIVE_CLUSTER_NAME=todo-cluster
+  - LIVE_CLUSTER_NAME=ees-server-cluster-1  
   - LIVE_APP_NAME=todo
   - AWS_URL=450447634754.dkr.ecr.ap-southeast-2.amazonaws.com
   - secure: jEuO7N8fBJLQHWUOdg5x2POy757h+R4n50w6Z+7pTMIIO8N8q7o66qbw6pvFK/raE+rxDRkKznMYDmnsVJum4NAe3+7Xt3TvshLYtST16Jxkyhg5pNYILH9Xp4WcVPoGlNSHKw+Xq2PjwU/VYYeURCMhkPOhCwjOKwsA+/jIM5vTbUrtOko0qlHjnSaTH2/SHaihaNQJ1tr/LguklV0BgD0FUdQor2Aska1JKlh5njX5BuiWfHft3TMCkgCTj2Ow7RUN/iFqhfLOO+MvylJ8/wazqzii2xL2LXXyBHR9Dh2FFsb7ZGBmnWe0F1GArJwmcYGjcBrUqDZEYDFb86793SsdHIBCFF6mnGK+QP1qDFiu8Gz5Ger/jjF49e0eJ5PrhZDO/3FXCahHJS0ZxIv3CgV4YQghdmHulQ7nbeT7LC3ZlKFle8eiJ35VW6MbT6jcqh5ru5SFrqfX0FoE7Rk/Bv27MVSCzj1o89ikhOeooJ+E807CzXZbli9qHv5DxIbixLpHROz1+HlkWyaZ6+CBA3nbXiOW7Q/9ppaffSHw/zRhpJcjmKy+S4sr9rY6GP6EPDXTNWBdcDi8JfKaKgQDT3U+gj02+L3NijbMXVr7FQuiGz+ndZHW9Dq2D03XOG3iaR5WMEBRvIbyDYa2HldDLC3jXVjUWipDdzuZLwqff1s=
