@@ -11,7 +11,7 @@ env:
 services:
 - docker
 script:
-- echo "trying without tests!"
+- npm test
 after_success:
 - bash docker_push.sh
 - bash ecs_deploy.sh
